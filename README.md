@@ -63,7 +63,7 @@ initializes a new empty git repo
 
 > git add `filename`
 
-adds a file to the empty git repo
+adds a file to the git repo. filename can be `.` which adds all. files need to be added before committing.
 
 > git remote add origin `link`
 
