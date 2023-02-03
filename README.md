@@ -89,3 +89,11 @@ switch to an existing branch
 
 create a new branch & switch to it
 
+> git diff `branchname`
+
+shows what code changed on this branch compared to branchname
+
+> git merge `branchname`
+
+merge branchname into this branch (scarcely used)
+
