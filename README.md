@@ -51,7 +51,8 @@ create an SSH key named `id_rsa` to authorize this machine on the `email address
 
 > git push -u origin main (later: git push)
 
-set the default git push to origin main & publish committed changes to the github repo
+set the default git push to origin main & publish committed changes to the github repo  
+-u = --set-upstream
 
 <br>
 
