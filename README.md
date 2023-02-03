@@ -98,3 +98,25 @@ shows what code changed on this branch compared to branchname
 
 merge branchname into this branch (scarcely used)
 
+<br>
+
+* ## roll back to previous commit
+
+> git log
+
+gives a list of commits and their hash
+
+> git reset `hash`  
+> git reset HEAD  
+> git reset HEAD~`int`
+
+rolls back the version to a previous commit identified by hash  
+OR previous commit  
+OR the commit int (number) away from the current version  
+AND unstages the commits (but keeps it on your computer to commit again)
+
+> git reset --hard `hash or other id`
+
+rolls back to a previous version and changes local files back to that version  
+making it impossible to commit them again. you continue work from the older commit.
+
