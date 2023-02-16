@@ -72,14 +72,20 @@ syncs your remote-tracking branch to the remote branches. use git merge `origin/
 
 tells you if files are committed or not
 
-> git commit -m "`change title`" -m"`change description`"
+> git add `.`
 
-commits a file locally (after saving it with ctrl+s) so git knows that it changed
+adds all files in repo to git
 
-> git push -u origin main (later: git push)
+> git commit -am "`change title`" -m"`change description`"
+
+makes a commit locally (after saving it with ctrl+s) for git. -a adds and commits in one, to skip 'git add .'
+
+> git push (-u `origin` `main`) (later: git push)
 
 set the default git push to origin main & publish committed changes to the github repo  
 -u = --set-upstream
+
+> saving shorthand: `git commit -am" " && git push`
 
 <br>
 
