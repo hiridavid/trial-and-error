@@ -59,13 +59,14 @@ list the active origin repo
 
 clones a repo from git to local machine, used for the first time
 
-> git pull
+> git pull `origin` `main`
 
-updates your local repo to the remote repo, used to get back to work
+updates your local repo to the remote repo, used to get back to work  
+default behaviour (git pull): git fetch origin HEAD && git merge HEAD
 
-> git fetch
+> git fetch `origin` `main`
 
-syncs your remote-tracking branch to the remote branches. git fetch + git merge = git pull
+syncs your remote-tracking branch to the remote branches. use git merge `origin/main` to update local repo (=git pull)
 
 > git status
 
