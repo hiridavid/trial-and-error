@@ -122,7 +122,8 @@ shows what code changed on current branch compared to branchname
 
 > git merge `branchname`
 
-merge branchname into this branch (only used locally, remotely you make pull requests instead)
+merge branchname into this branch (only used locally, remotely you make pull requests instead)  
+you should be ON `main` and git merge `sidebranch`
 
 > git branch -d `branchname`
 
