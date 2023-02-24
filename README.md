@@ -17,15 +17,15 @@ steps into a folder (parent folder with `../` or sibling folder with `../path`)
 
 > ls `filename`
 
-searches for files with filename name in directory
+searches for files with 'filename' name in directory
 
 > ls -lah
 
-gives you all the items in the folder (-l long-listing format, -a shows all, -h shows file size in human-readable format)
+gives you all the items in directory (-l long-listing format, -a shows all, -h shows file size in human-readable format)
 
 > cat `filename`
 
-writes a file to the terminal (i think?)
+con**cat**enates & writes the content of a file to the terminal
 
 <br>
 
@@ -33,7 +33,12 @@ writes a file to the terminal (i think?)
 
 > mkdir `directory name`
 
-creates a folder in the terminal's directory (you need to move into it with cd `directory name`)
+creates a folder in the terminal's directory (you need to move into it with 'cd directory name')
+
+> touch `filename.ext`
+
+makes sure that 'filename' file with 'ext' filetype exists in the directory.  
+creates the file if missing, else updates modification time 
 
 > git init
 
@@ -41,7 +46,7 @@ initializes a new empty git repo in current directory (creates .git folder)
 
 > git add `filename`
 
-adds a file to the git repo. filename can be `.` which adds all. files need to be added before committing.
+adds a file to the git repo. 'filename' can be `.` which adds all. files need to be added before committing.
 
 > git remote add `origin` `link`
 
@@ -57,16 +62,17 @@ list the active origin repo
 
 > git clone `link`
 
-clones a repo from git to local machine, used for the first time
+clones a repo from git to local machine, used for the **first time**
 
 > git pull `origin` `main`
 
-updates your local repo to the remote repo, used to get back to work  
+updates your local repo to the remote repo, used **regularly** to get back to work  
 default behaviour (git pull): git fetch origin HEAD && git merge HEAD
 
 > git fetch `origin` `main`
 
-syncs your remote-tracking branch to the remote branches. use git merge `origin/main` to update local repo (=git pull)
+syncs your remote-tracking branch to the remote branches.  
+use git merge 'origin/main' to update local repo (=git pull)
 
 > git status
 
@@ -82,7 +88,7 @@ makes a commit locally (after saving it with ctrl+s) for git. -a adds and commit
 
 > git push (-u `origin` `main`) (later: git push)
 
-set the default git push to origin main & publish committed changes to the github repo  
+set the default git push to 'origin main' & publish committed changes to the github repo  
 -u = --set-upstream
 
 > saving shorthand: `git commit -am" " && git push`
@@ -93,12 +99,12 @@ set the default git push to origin main & publish committed changes to the githu
 
 > ssh-keygen -t rsa -b 4096 -C "`email address`"  
 
-create an SSH key named `id_rsa` by default, identified by `email address` 
+create an SSH key named 'id_rsa' by default, identified by 'email address' 
 
 > eval "$(ssh-agent -s)"  
 ssh-add ~/.ssh/`id_rsa`
 
-Authorize this machine on the `email address`'s github account using `id-rsa` private key
+Authorize this machine on the 'email address' github account using 'id-rsa' private key
 
 <br>
 
@@ -118,12 +124,12 @@ builds a new branch & switch to it
 
 > git diff `branchname`
 
-shows what code changed on current branch compared to branchname
+shows what code changed on current branch compared to 'branchname'
 
 > git merge `branchname`
 
-merge branchname into this branch (only used locally, remotely you make pull requests instead)  
-you should be ON `main` and git merge `sidebranch`
+merge 'branchname' into this branch (only used locally, remotely you make pull requests instead)  
+you should be **ON** 'main' and git merge 'sidebranch'
 
 > git branch -d `branchname`
 
@@ -145,9 +151,9 @@ gives a list of commits and their hash
 > git reset HEAD  
 > git reset HEAD~`int`
 
-rolls back the version to a previous commit identified by hash  
+rolls back the version to a previous commit identified by 'hash'  
 OR previous commit  
-OR the commit int (number) away from the current version  
+OR the commit 'int' (number) away from the current version  
 AND unstages the commits (but keeps it on your computer to commit again)
 
 > git reset --hard `hash or other id`
