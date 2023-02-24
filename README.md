@@ -182,7 +182,17 @@ delete branch REMOTELY
 
 > git log
 
-gives a list of commits and their hash
+prints a history of commits, their hash & commit messages  
+public & remote, future history is erased at 'git reset'
+
+> git reflog
+
+prints a history of git commands, their hash, commit messages & amendments  
+private & local, keeps all commit history
+
+> git commit --amend -m"`message`"
+
+changes the commit message of the last commit
 
 > git reset `hash`  
 > git reset HEAD  
