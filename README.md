@@ -9,23 +9,65 @@ repo for experimenting with git &amp; this website\
 
 # git bash terminal cheat sheet
 
-* ## navigating directories
+<br>
+
+* ## terminal navigation
+
+> pwd
+
+prints working directory path (where the terminal is)
 
 > cd `path`
 
-steps into a folder (parent folder with `../` or sibling folder with `../path`)
+change directory to 'path' (parent folder with `../` or sibling folder with `../path`)
+
+> mkdir `directory name`
+
+creates a folder in the terminal's directory
+
+> cp -r `directory name` `target directory`
+
+copies a directory to 'target directory'
+
+> rm -r `directory name`
+
+removes a directory & all contents
+
+> touch `filename.ext`
+
+makes sure that 'filename' file with 'ext' filetype exists in the directory.  
+creates the file if missing, else updates modification time 
+
+> cp `filename.ext` `target directory`
+
+copies a file to 'target directory'
+
+> rm `filename.ext`
+
+removes a file
 
 > ls `filename`
 
 searches for files with 'filename' name in directory
 
+> stat `path`
+
+shows the properties of files & dirs at 'path' such as size, type, content count, raw(read-append-write) rights, modification dates, etc.  
+'stat `.`' for current dir
+
 > ls -lah
 
-gives you all the items in directory (-l long-listing format, -a shows all, -h shows file size in human-readable format)
+shows properties of all items in directory  
+(-l long-listing format, -a shows all, -h shows file size in human-readable format)
 
-> cat `filename`
+> cat `filename.ext`
 
 con**cat**enates & writes the content of a file to the terminal
+
+> explorer `path`
+
+opens file explorer at 'path'
+('path' can be `.` which opens current directory)
 
 <br>
 
@@ -34,11 +76,6 @@ con**cat**enates & writes the content of a file to the terminal
 > mkdir `directory name`
 
 creates a folder in the terminal's directory (you need to move into it with 'cd directory name')
-
-> touch `filename.ext`
-
-makes sure that 'filename' file with 'ext' filetype exists in the directory.  
-creates the file if missing, else updates modification time 
 
 > git init
 
