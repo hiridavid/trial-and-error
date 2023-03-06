@@ -69,6 +69,15 @@ con**cat**enates & writes the content of a file to the terminal
 opens file explorer at 'path'
 ('path' can be `.` which opens current directory)
 
+> start `filename.ext`
+
+runs file  
+(or opens file explorer if 'filename.ext' is a directory)
+
+> code -r `path`
+
+opens directory in current VSCode window. Omit '-r' to open in new window.
+
 <br>
 
 * ## making new github repo
